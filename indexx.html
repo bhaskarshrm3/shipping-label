@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - shipping label generator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="module--shipping-label-template">
+  <h3>Receiver information</h3>
+  <label for="receiver-name">Name
+  <input id="receiver-name" placeholder="John Doe">
+  </label>
+  <label>Address
+  <input id="receiver-address-first" placeholder="122 Baker Street">
+  <input id="receiver-address-second" placeholder="London, United Kingdom">
+  </label>
+  <label>Phone
+  <input id="receiver-phone" placeholder="1234 5678">
+  </label>
+</div>
+<div>
+  <h3>Sender information</h3>
+  <label for="sender-name">Name
+    <input id="sender-name" placeholder="John Doe"></label>
+  <label>Address
+  <input id="sender-address-first" placeholder="122 Baker Street">
+    <input id="sender-address-second" placeholder="London, United Kingdom">
+  </label>
+  <label>Phone
+  <input id="sender-phone" placeholder="1234 5678">
+  </label>
+</div>
+<div>
+  <button class="generate-pdf">Generate shipping label</button>
+</div>
+<svg id="barcode"></svg>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
